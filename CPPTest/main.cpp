@@ -11,11 +11,11 @@
 
 using namespace std ;
 
-int main() {
-    //some kind pf cool for loops !
+int main()
+{
     int a ;
     a = 10 / 2 ;
-    for ( /* a */ ; a <= 10 ; a++ ) {
-        cout<<a;
+    for ( a ; a <= 10 ; a = a*2 ) {
+        cout<<a<<endl ;
     }
 }
