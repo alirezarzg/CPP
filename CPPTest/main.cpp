@@ -15,6 +15,7 @@ using namespace std ;
 class Square {
     public :
     Square(); //it should be here to manually build a constructor ; *****
+    ~Square(); //it should be here to manually build a destructor ; *****
     int a , b;
     int area (void) {
         return a*a ;
@@ -28,6 +29,12 @@ Square :: Square()
     b = 10;
     cout << "the object got buid , if you see this it means that an object is getting built from Square class"<<endl;
 }
+//constructor of Square class
+Square :: ~Square()
+{
+    cout << "the object got destroyed , if you see this it means that an object is getting destroyed wich was made from Square class"<<endl;
+}
+
 //func outside of class definition
 int Square::mohit (void) {
     return a*4;
