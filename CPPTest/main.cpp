@@ -24,13 +24,22 @@ class Rectangle {
     }
 };
 
+class Square : public Rectangle {
+    public :
+    int opper(void){
+        return masahat()*b;
+    }
+};
+
 //overloading operators
 int operator + (Rectangle const &obj1 , Rectangle const &obj2){ //const &obj1 -> means the first obj made of Rectangle class (no1 doesnt matter it could be even obj10 but would be known as the first obj for compiler because of the place it is at .
     return (obj1.a + obj1.b) * obj2.a ;
 }
 // main start
 int main() {
-    Rectangle o1 , obj2 ;
-    cin>>o1.a>>o1.b>>obj2.a>>obj2.b ;
-    cout<< o1 + obj2 ;
+    Square sq1 ,sq2 ;
+    sq1.a = 2 ;
+    sq1.b = 3;
+    sq2.a = 4;
+    cout << sq1+sq2 ;
 }
