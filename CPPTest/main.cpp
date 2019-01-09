@@ -41,5 +41,5 @@ int main() {
     sq1.a = 2 ;
     sq1.b = 3;
     sq2.a = 4;
-    cout << sq1+sq2 ;
+    cout<< sq1.opper() ;
 }
