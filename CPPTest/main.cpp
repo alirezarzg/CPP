@@ -25,10 +25,15 @@ int Square::mohit (void) {
     return a*4;
 }
 
+int multiply (int a , int b){
+    return a*b ;
+}
+
 // main start
 int main() {
     Square sq1 ;
     sq1.a = 10 ;
     cout << sq1.area() <<endl ;
     cout << sq1.mohit() << endl ;
+    cout << "multiply " << multiply(12, 2) <<endl ;
 }
