@@ -11,12 +11,24 @@
 
 using namespace std ;
 
-int main() {
-    int i,j ;
-    for (i=1 ; i<=10 ; i++) {
-        for (j=1 ; j<=10 ; j++) {
-            cout<<i*j<<" " ;
-        }
-        cout<<endl;
+//square class
+class Square {
+    public :
+    int a ;
+    int area (void) {
+        return a*a ;
     }
+    int mohit (void) ;
+};
+//func outside of class definition
+int Square::mohit (void) {
+    return a*4;
+}
+
+// main start
+int main() {
+    Square sq1 ;
+    sq1.a = 10 ;
+    cout << sq1.area() <<endl ;
+    cout << sq1.mohit() << endl ;
 }
